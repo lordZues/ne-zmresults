@@ -1,0 +1,22 @@
+{
+  // ZM Results — one Worker serves the website (site/) plus the form API and admin page
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "patient-silence-5fdd",
+  "main": "worker/worker.js",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./site",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    // Send form submissions and the admin page to the Worker code; everything else is served as static files
+    "run_worker_first": ["/api/*", "/admin", "/admin/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "zmresults-leads",
+      "database_id": "48c0c0e3-d69c-4a99-8f01-7f4075c9abd4"
+    }
+  ],
+  "observability": { "enabled": true }
+}
