@@ -2,10 +2,10 @@
   // ZM Results — one Worker serves the website (site/) plus the form API and admin page
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "patient-silence-5fdd",
-  "main": "worker/worker.js",
+  "main": "worker.js",
   "compatibility_date": "2026-11-01",
   "assets": {
-    "directory": "./site",
+    "directory": "./",
     "binding": "ASSETS",
     "html_handling": "auto-trailing-slash",
     // Send form submissions and the admin page to the Worker code; everything else is served as static files
