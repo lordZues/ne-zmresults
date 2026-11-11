@@ -1,7 +1,7 @@
 {
-  // ZM Results — one Worker serves the website (site/) plus the form API and admin page
+  // ZM Results — one Worker serves the website (repo root) plus the form API and admin page
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "patient-silence-5fdd",
+  "name": "ne-zmresults",
   "main": "worker.js",
   "compatibility_date": "2026-11-01",
   "assets": {

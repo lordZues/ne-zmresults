@@ -1,8 +1,8 @@
 worker.js
 wrangler.jsonc
 schema.sql
-DEPLOY.md
 README.md
-zmresults-website.zip
+CLAUDE.md
+_build
 .git
 .assetsignore

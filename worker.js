@@ -38,9 +38,10 @@ export default {
         return new Response('Not found', { status: 404 });
       }
 
-      if (path === '/api/health') return json({ ok: true, db: Boolean(env.DB) });
+      if (path === '/api/health') return json({ ok: true, db: Boolean(env.DB), admin_password_set: Boolean(env.ADMIN_PASSWORD) });
 
-      // Anything else: pass through to the normal website (GitHub Pages)
+      // Anything else: serve the website files (from the site/ folder when deployed with wrangler)
+      if (env.ASSETS) return env.ASSETS.fetch(request);
       return fetch(request);
     } catch (err) {
       console.error(err);
