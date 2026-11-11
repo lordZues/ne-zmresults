@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1740 620">
+  <title>ZM Results</title>
+  <g fill="none" stroke="#64A4FC" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M237 35H373V140" stroke-width="64"/>
+    <rect x="101" y="174" width="546" height="410" rx="72" stroke-width="68"/>
+    <path d="M33 377H67M683 377H717" stroke-width="66"/>
+    <path d="M271 343V413M477 343V413" stroke-width="68"/>
+  </g>
+  <text x="970" y="472" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="520">ZM</text>
+</svg>
