@@ -23,7 +23,7 @@
   // Audit form: saves to the Cloudflare leads database AND emails a copy via FormSubmit.
   // If both fail, the visitor is pointed to WhatsApp/phone instead of losing the enquiry.
   const LEADS_ENDPOINT = '/api/audit';
-  const EMAIL_ENDPOINT = 'https://formsubmit.co/ajax/zmresults@gmail.com';
+  const EMAIL_ENDPOINT = 'https://formsubmit.co/ajax/zuesjordan@gmail.com';
 
   document.querySelectorAll('.contact-form').forEach((form) => {
     const status = form.querySelector('.form-status');
@@ -42,6 +42,8 @@
 
       const data = Object.fromEntries(new FormData(form).entries());
       data.source_page = location.pathname;
+      const isQuery = form.dataset.form === 'query';
+      if (!data.business_name) data.business_name = 'Not given';
 
       if (button) { button.disabled = true; button.textContent = 'Sending…'; }
       show('', '');
@@ -58,17 +60,20 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
-          _subject: 'New ZM Results audit request — ' + (data.business_name || data.name || ''),
+          _subject: (isQuery ? 'New website query — ' : 'New free audit request — ') + data.name +
+            (data.business_name !== 'Not given' ? ' (' + data.business_name + ')' : ''),
           _template: 'table',
           _captcha: 'false',
           _honey: data.company_url || '',
+          _replyto: data.email || undefined,
+          Type: isQuery ? 'General query' : 'Free growth audit request',
           Name: data.name,
           Business: data.business_name,
           Phone: data.phone,
-          Email: data.email || '—',
-          Service: data.service,
+          email: data.email || '—',
+          'About': data.service,
           Message: data.message || '—',
-          Page: data.source_page,
+          'Sent from page': 'zmresults.co.za' + data.source_page,
         }),
       }).then((r) => { if (!r.ok) throw new Error('email ' + r.status); return true; }), 12000);
 
