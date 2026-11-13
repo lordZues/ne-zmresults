@@ -379,3 +379,7 @@ em { font-style: italic; }
 .client-grid span { font-weight: 600; font-size: .92rem; color: var(--muted); }
 @media (max-width: 860px) { .client-grid li { width: calc((100% - 2 * 22px) / 3); } }
 @media (max-width: 560px) { .client-grid { gap: 16px; } .client-grid li { width: calc((100% - 16px) / 2); } }
+
+/* Home hero headline (longer FOMO line) */
+.hero-title { font-size: clamp(2.6rem, 5vw, 4.1rem); }
+.hero-title span { display: inline-block; }
