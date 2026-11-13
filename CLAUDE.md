@@ -7,7 +7,7 @@
 
 ## Adding a blog post
 
-1. Add a dict to `POSTS` in `_build/build.py` with: `slug` (`something.html`), `title`, `seo_title` (≤ 60 chars), `desc` (≤ 155 chars), `excerpt`, `read`, `body` (HTML using `<p>`, `<h2>`, `<ul>`).
-2. Posts currently share one `PUBLISHED` date. When adding a post, give each post its own `date` and use it in `post_page()` (byline and schema) instead of `PUBLISHED`.
+1. Add a dict to `POSTS` in `_build/build.py` with: `slug` (`something.html`), `title`, `seo_title` (≤ 60 chars), `desc` (≤ 155 chars), `excerpt`, `date` (`YYYY-MM-DD`, the publish date), `read`, `body` (HTML using `<p>`, `<h2>`, `<ul>`).
+2. The blog index sorts posts newest first by `date`. Optional `updated` sets the schema dateModified.
 3. Write for Durban / South African small-business owners: practical, honest, no invented statistics, client results or testimonials. Link to the relevant service or area page and to other posts.
 4. Build, check that the new page and the sitemap entry exist, then commit.

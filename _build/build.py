@@ -216,7 +216,7 @@ CLIENTS = [
     ("client-ultra-intellects.jpg", "Ultra Intellects"),
     ("client-quick-fix-laptop-repairs.jpg", "Quick Fix Laptop Repairs"),
     ("client-zm-accessories-outdoor.jpg", "ZM Accessories Outdoor"),
-    ("client-arrow.jpg", ""),  # name not supplied yet
+    ("client-roof-rackers.jpg", "Roof Rackers"),
 ]
 CLIENT_TILES = "".join(
     f'<li><img src="{f}" alt="{html.escape(n) + " logo" if n else "Client logo"}" width="480" height="480" loading="lazy" decoding="async" />'
@@ -646,7 +646,7 @@ for a in AREAS:
 
 
 # ---------------- BLOG ----------------
-PUBLISHED = "2026-11-11"
+PUBLISHED = "2026-11-11"  # date of the first three posts; new posts set their own "date"
 POSTS = [
     {
         "slug": "google-business-profile-guide.html",
@@ -654,6 +654,7 @@ POSTS = [
         "seo_title": "Google Business Profile Guide for Durban Businesses | ZM Results",
         "desc": "A step-by-step guide to setting up and optimising your free Google Business Profile so more local customers find you on Google Search and Maps.",
         "excerpt": "Your free Google Business Profile is the single biggest factor in showing up for \"near me\" searches. Here's how to set it up properly.",
+        "date": "2026-11-11",
         "read": "6 min read",
         "body": """
 <p>When someone searches for a business like yours "near me" or "in Durban", Google usually shows a map with three businesses before any normal website results. Those businesses come from <strong>Google Business Profile</strong>, a free listing that every local business should have. If yours is missing, incomplete or unverified, you're giving those spots to your competitors.</p>
@@ -685,6 +686,7 @@ POSTS = [
         "seo_title": "How to Get More Google Reviews for Your Business | ZM Results",
         "desc": "Practical, rule-friendly ways for South African small businesses to get more genuine Google reviews and use them to win more customers.",
         "excerpt": "Reviews help you rank in Google Maps and help customers choose you. Here's how to get more of them, the right way.",
+        "date": "2026-11-11",
         "read": "5 min read",
         "body": """
 <p>Google reviews do two jobs at once. They're one of the factors Google uses to decide which local businesses to show, and they're often the deciding factor when a customer compares you with a competitor. Yet most happy customers never leave a review simply because nobody asked them.</p>
@@ -714,6 +716,7 @@ POSTS = [
         "seo_title": "SEO vs Google Ads for Small Businesses in South Africa | ZM Results",
         "desc": "SEO or Google Ads? A plain-language comparison of cost, speed and long-term value to help South African small businesses decide where to start.",
         "excerpt": "Both put your business on Google, but they work very differently. Here's how to decide where to spend first.",
+        "date": "2026-11-11",
         "read": "5 min read",
         "body": """
 <p>"Should I do SEO or Google Ads?" is one of the most common questions we hear from small business owners. Both can put you in front of people searching for what you sell, but they work in very different ways.</p>
@@ -748,19 +751,25 @@ POSTS = [
 ]
 
 
+def nice_date(iso):
+    import datetime
+    d = datetime.date.fromisoformat(iso)
+    return f"{d.day} {d.strftime('%B %Y')}"
+
+
 def post_page(p):
     body = f"""
       <section class="page-hero"><div class="container">
         <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="blog.html">Blog</a> / <span>{html.escape(p["title"])}</span></nav>
         <p class="eyebrow">Marketing tips</p>
         <h1 class="post-title">{html.escape(p["title"])}</h1>
-        <p class="post-meta">By ZM Results · <time datetime="{PUBLISHED}">11 November 2026</time> · {p["read"]}</p>
+        <p class="post-meta">By ZM Results · <time datetime="{p["date"]}">{nice_date(p["date"])}</time> · {p["read"]}</p>
       </div></section>
       <section class="section"><div class="container"><article class="post">{p["body"]}</article></div></section>
       {cta_band("Free growth audit", "Want us to check your business?", "We'll show you how you currently appear on Google and the quickest ways to win more local customers.")}
       {contact(eyebrow="Get in touch", title="Let's get your<br /><em>business seen.</em>")}"""
     schema = [
-        {"@type": "BlogPosting", "headline": p["title"], "description": p["desc"], "datePublished": PUBLISHED, "dateModified": PUBLISHED,
+        {"@type": "BlogPosting", "headline": p["title"], "description": p["desc"], "datePublished": p["date"], "dateModified": p.get("updated", p["date"]),
          "author": {"@type": "Organization", "name": "ZM Results", "url": BASE + "/"}, "publisher": {"@id": BASE + "/#business"},
          "image": BASE + "/og-image.png", "mainEntityOfPage": f"{BASE}/{p['slug']}"},
         {"@type": "BreadcrumbList", "itemListElement": [
@@ -773,7 +782,7 @@ def post_page(p):
 for p in POSTS:
     post_page(p)
 
-cards = "".join(f"""<article class="post-card"><p class="post-meta">{p["read"]}</p><h2><a href="{p["slug"]}">{html.escape(p["title"])}</a></h2><p>{html.escape(p["excerpt"])}</p><a class="text-link" href="{p["slug"]}" aria-hidden="true" tabindex="-1">Read the guide <span>→</span></a></article>""" for p in POSTS)
+cards = "".join(f"""<article class="post-card"><p class="post-meta">{nice_date(p["date"])} · {p["read"]}</p><h2><a href="{p["slug"]}">{html.escape(p["title"])}</a></h2><p>{html.escape(p["excerpt"])}</p><a class="text-link" href="{p["slug"]}" aria-hidden="true" tabindex="-1">Read the guide <span>→</span></a></article>""" for p in sorted(POSTS, key=lambda x: x["date"], reverse=True))
 blog = f"""
       <section class="page-hero"><div class="container">
         <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <span>Blog</span></nav>
