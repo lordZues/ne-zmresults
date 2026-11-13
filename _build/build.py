@@ -13,6 +13,7 @@ PHONE_TEL = "+27736957783"
 WA = "https://wa.me/27736957783?text=Hi%20ZM%20Results%2C%20I%27d%20like%20a%20free%20growth%20audit."
 EMAIL = "zmresults@gmail.com"          # shown publicly on the site
 FORM_EMAIL = "zuesjordan@gmail.com"   # where every form submission is emailed
+REVIEW_URL = "https://g.page/r/CQwwFzKsM4ULEAE/review"  # Google Business Profile review link
 
 BUSINESS = {
     "@type": "ProfessionalService",
@@ -93,6 +94,7 @@ def footer():
               <li><a href="tel:{PHONE_TEL}">{PHONE_DISPLAY}</a></li>
               <li><a href="{WA}" target="_blank" rel="noopener">WhatsApp us</a></li>
               <li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
+              <li><a href="{REVIEW_URL}" target="_blank" rel="noopener">★ Leave us a Google review</a></li>
               <li>Durban, KwaZulu-Natal</li>
             </ul>
           </div>
@@ -268,6 +270,7 @@ home = f"""
       <section class="clients section" id="clients"><div class="container">
         <div class="section-head centered"><p class="eyebrow">Our clients</p><h2>Businesses we've<br /><em>worked with.</em></h2><p class="section-intro">From attorneys and logistics companies to contractors and repair shops, we help businesses across industries get seen.</p></div>
         <ul class="client-grid">{CLIENT_TILES}</ul>
+        <p class="note" style="text-align:center;margin-top:34px">Worked with us? We'd really appreciate it if you <a href="{REVIEW_URL}" target="_blank" rel="noopener">left us a Google review ★</a></p>
       </div></section>
 
       <section class="services section" id="services"><div class="container"><div class="section-head"><div><p class="eyebrow">What we do</p><h2>More visibility.<br /><em>More business.</em></h2></div><p class="section-intro">Your customers are searching online. We make sure they find you, trust you and choose you.</p></div><div class="service-grid">
@@ -501,6 +504,7 @@ contact_page = f"""
               <a class="whatsapp-link" href="{WA}" target="_blank" rel="noopener">☏ WhatsApp {PHONE_DISPLAY}</a>
               <a href="tel:{PHONE_TEL}">☎ Call {PHONE_DISPLAY}</a>
               <a href="mailto:{EMAIL}">✉ {EMAIL}</a>
+              <a href="{REVIEW_URL}" target="_blank" rel="noopener">★ Leave us a Google review</a>
             </div>
           </div>
           <form class="contact-form" data-form="query" action="https://formsubmit.co/{FORM_EMAIL}" method="POST" novalidate>
