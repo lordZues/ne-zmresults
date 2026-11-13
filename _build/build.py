@@ -70,6 +70,8 @@ def footer():
               <li><a href="seo-durban.html">SEO in Durban</a></li>
               <li><a href="social-media-management-durban.html">Social media management</a></li>
               <li><a href="google-ads-durban.html">Google Ads management</a></li>
+              <li><a href="website-design-durban.html">Website design</a></li>
+              <li><a href="chatbot-ai-integration-durban.html">Chatbots &amp; AI integration</a></li>
               <li><a href="/#pricing">90-Day Google Growth Plan</a></li>
               <li><a href="blog.html">Marketing tips blog</a></li>
             </ul>
@@ -105,7 +107,7 @@ def footer():
 def contact(eyebrow="Ready to grow?", title="Let's get your<br /><em>business seen.</em>",
             intro="Tell us a little about your business and we'll get back to you with a free growth audit.",
             preselect="SEO & Google rankings"):
-    options = ["SEO & Google rankings", "Social media management", "Google Ads", "90-Day Google Growth Plan", "Everything / not sure yet"]
+    options = ["SEO & Google rankings", "Social media management", "Google Ads", "90-Day Google Growth Plan", "Website design", "Chatbot & AI integration", "Everything / not sure yet"]
     opts = "".join(f'<option{" selected" if o == preselect else ""}>{html.escape(o)}</option>' for o in options)
     return f"""<section class="contact section" id="contact">
         <div class="container contact-grid">
@@ -272,7 +274,7 @@ home = f"""
         <article class="service-card featured"><span class="service-number">01</span><span class="service-icon">⌕</span><h3>SEO that gets you<br />on page one</h3><p>We optimise your website and online presence to rank higher and bring in customers who are ready to buy.</p><a href="seo-durban.html">Explore SEO <span>→</span></a></article>
         <article class="service-card"><span class="service-number">02</span><span class="service-icon">◎</span><h3>Social media that<br />builds your brand</h3><p>We create content and manage your social media so your business stays visible, relevant and top of mind.</p><a href="social-media-management-durban.html">Explore social media <span>→</span></a></article>
         <article class="service-card"><span class="service-number">03</span><span class="service-icon">↗</span><h3>Google Ads that<br />drive real leads</h3><p>Get in front of people searching for exactly what you offer with campaigns built for results.</p><a href="google-ads-durban.html">Explore Google Ads <span>→</span></a></article>
-      </div></div></section>
+      </div><p class="note" style="text-align:center;margin-top:30px">We also build <a href="website-design-durban.html">websites that convert</a> and set up <a href="chatbot-ai-integration-durban.html">chatbots &amp; AI assistants</a> that answer customers after hours.</p></div></section>
 
       <section class="promise section"><div class="container promise-grid"><div><p class="eyebrow">Our promise</p><h2>Be the business<br /><em>people find first.</em></h2><p class="promise-copy">If your business isn't on the first page of Google, your customers might never see you. That's where we come in.</p><a class="button button-dark" href="#contact">Let's grow your business <span>→</span></a></div><div class="promise-stats"><div class="big-stat"><strong>90</strong><span>days to page-one<br />momentum</span></div><div class="stat-row"><div><strong>R15k</strong><span>all-in SEO<br />investment</span></div><div><strong>100%</strong><span>focused on<br />your growth</span></div></div></div></div></section>
 
@@ -407,18 +409,69 @@ service_page(
     "Google Ads", "Google Ads management", "ads")
 
 
+service_page(
+    "website-design-durban.html", "Website design",
+    "Website Design Durban | New Sites & Upgrades | ZM Results",
+    "Website design and upgrades for Durban businesses: fast, mobile-friendly sites built to rank on Google and turn visitors into calls and enquiries.",
+    "Website design in Durban", "A website that<br /><span>works for you.</span>",
+    "New websites and upgrades for Durban businesses: fast, mobile-friendly and built from day one to show up on Google and turn visitors into enquiries.",
+    "Most visitors decide within seconds whether to stay, call or leave. Your website should make that decision easy.",
+    "<p>We design clear, fast websites that work properly on phones, explain what you do in plain language and make it effortless to call, WhatsApp or send an enquiry. Every site is built with <a href='seo-durban.html'>SEO</a> in mind from the start, so it's ready to rank instead of needing to be fixed later.</p><p>Already have a website? We can upgrade it, improving speed, design, mobile layout and the path to an enquiry, without starting from scratch.</p>",
+    ["Don't have a website yet, or aren't proud of your current one", "Get visitors but very few enquiries", "Have a site that's slow or hard to use on a phone", "Want a site you can grow with SEO and Google Ads"],
+    [("✎", "Custom design", "A clean, professional design built around your brand, logo and colours, not a generic template."),
+     ("☎", "Built to convert", "Clear calls to action, click-to-call and WhatsApp buttons, and enquiry forms that land in your inbox."),
+     ("⚙", "Fast & mobile-first", "Lightweight pages that load quickly and work properly on every phone and screen size."),
+     ("⌕", "SEO-ready", "Page titles, descriptions, structure and Google Search Console set up correctly from launch."),
+     ("◎", "Upgrades & redesigns", "Refresh an existing site with new pages, better speed, a modern design and clearer messaging."),
+     ("★", "Ongoing support", "Changes, new pages and updates when you need them, so your site keeps up with your business.")],
+    [("Discover", "We learn about your business, customers and goals."), ("Design", "You see and approve the layout and content."),
+     ("Build", "We build, test on every device and set up tracking."), ("Launch", "Your site goes live, connected to Google and ready to grow.")],
+    [("How long does a new website take?", "It depends on the size of the site and how quickly the content is ready. We'll give you a clear timeline after your free consultation."),
+     ("How much does a website cost?", "It depends on how many pages and features you need. We'll give you a clear, fixed quote before any work starts."),
+     ("Can you improve my existing website instead of building a new one?", "Yes. Often an upgrade, with better speed, mobile layout, clearer content and stronger calls to action, gets you most of the benefit at a lower cost."),
+     ("Will my new website show up on Google?", "We build every site to be search-friendly and connect it to Google Search Console. To rank for competitive searches, most businesses pair their website with our SEO service.")],
+    ("Start with clarity", "Is your website costing you customers?", "We'll review your current site, or your plans for one, and show you what to fix first."),
+    "Website design", "Website design", "services")
+
+service_page(
+    "chatbot-ai-integration-durban.html", "Chatbots & AI",
+    "Chatbot & AI Integration Durban | ZM Results",
+    "Chatbots and AI assistants for Durban businesses: answer customer questions on your website or WhatsApp and capture leads, even after hours.",
+    "Chatbot & AI integration", "Answer every enquiry.<br /><span>Even after hours.</span>",
+    "We add chatbots and AI assistants to your website and WhatsApp, so customers get quick answers and you don't miss leads while you're busy or closed.",
+    "When a customer can't get a quick answer, many simply move on to the next business.",
+    "<p>A well-built chatbot answers common questions straight away (services, hours, areas you cover, how to book) and then collects the customer's details so you can follow up. It doesn't replace you. It makes sure nobody slips through the cracks while you're on a job, in a meeting or asleep.</p><p>We set it up around your real business information, test it carefully, and make it easy for customers to reach a real person. Chatbots work best alongside a strong <a href='website-design-durban.html'>website</a> and <a href='seo-durban.html'>SEO</a> that bring visitors in.</p>",
+    ["Get the same customer questions over and over", "Miss enquiries after hours or while you're busy", "Get more WhatsApp messages than you can answer quickly", "Want to capture more leads from the visitors you already get"],
+    [("◎", "Website chatbot", "A chat assistant on your website that answers questions and guides visitors to book or enquire."),
+     ("☏", "WhatsApp automation", "Instant replies and FAQs for WhatsApp Business, with an easy handover to you."),
+     ("✎", "Set up for your business", "Built around your services, hours and policies, so answers are accurate and sound like you."),
+     ("☎", "Lead capture", "Collects names, numbers and what the customer needs, and sends them straight to you."),
+     ("⚙", "Connected to your tools", "Links with your email, forms or booking system where possible, so leads land where you work."),
+     ("★", "Monitoring & improvements", "We review conversations and improve the answers over time.")],
+    [("Map", "We list the questions customers ask and what a good answer looks like."), ("Build", "We set up the assistant using information you approve."),
+     ("Test", "We test it thoroughly before customers ever see it."), ("Launch & refine", "It goes live, and we keep improving it based on real conversations.")],
+    [("Will a chatbot give customers wrong answers?", "We set it up only around information you approve, test it before launch, and configure it to hand over to you when it isn't sure instead of guessing."),
+     ("Can it work on WhatsApp?", "Yes. We can set up automated replies and FAQs for WhatsApp Business, with an easy way for customers to reach you directly."),
+     ("What about customers' personal information?", "We set chatbots up to collect only what you need to follow up, and help you handle that information in line with POPIA."),
+     ("How much does it cost?", "It depends on where it runs (website, WhatsApp or both) and how much it needs to do. We'll give you a clear quote after a free consultation.")],
+    ("Start with clarity", "How many enquiries are you missing?", "We'll look at how customers contact you now and show you where a chatbot could help."),
+    "Chatbot & AI integration", "Chatbot and AI integration", "services")
+
+
 # ---------------- SERVICES HUB ----------------
 hub = f"""
       <section class="page-hero"><div class="container">
         <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <span>Services</span></nav>
         <p class="eyebrow">Services</p>
         <h1>Marketing that<br /><span>moves business.</span></h1>
-        <p class="hero-lead">From page-one SEO to consistent social content and high-intent Google Ads, we help Durban businesses get seen by the right customers.</p>
+        <p class="hero-lead">From page-one SEO and high-intent Google Ads to websites that convert and chatbots that answer after hours, we help Durban businesses get seen and chosen by the right customers.</p>
       </div></section>
       <section class="section"><div class="container"><div class="service-detail-grid">
         <article><span class="service-icon">⌕</span><p class="eyebrow">01 · Search</p><h2>SEO &amp; Google rankings</h2><p>Keyword research, technical improvements, local SEO, Google Business Profile optimisation and conversion-focused content.</p><ul class="check-list"><li>SEO audit and roadmap</li><li>Local search optimisation</li><li>Google Business Profile growth</li><li>Monthly progress reporting</li></ul><a class="button button-dark" href="seo-durban.html">Explore SEO <span>→</span></a></article>
         <article><span class="service-icon">◎</span><p class="eyebrow">02 · Social</p><h2>Social media management</h2><p>A consistent social presence designed around your brand, audience and business goals.</p><ul class="check-list"><li>Content planning and captions</li><li>Design and posting</li><li>Community engagement support</li><li>Monthly performance review</li></ul><a class="button button-dark" href="social-media-management-durban.html">Explore social media <span>→</span></a></article>
         <article><span class="service-icon">↗</span><p class="eyebrow">03 · Paid growth</p><h2>Google Ads</h2><p>Reach people already searching for your services with structured campaigns, clear targeting and ongoing optimisation.</p><ul class="check-list"><li>Campaign setup and targeting</li><li>Ad copy and landing page guidance</li><li>Conversion tracking</li><li>Budget optimisation</li></ul><a class="button button-dark" href="google-ads-durban.html">Explore Google Ads <span>→</span></a></article>
+        <article><span class="service-icon">✎</span><p class="eyebrow">04 · Websites</p><h2>Website design</h2><p>Fast, mobile-friendly websites and upgrades, built to rank on Google and turn visitors into enquiries.</p><ul class="check-list"><li>Custom design for your brand</li><li>Click-to-call, WhatsApp and enquiry forms</li><li>SEO-ready from launch</li><li>Upgrades for existing sites</li></ul><a class="button button-dark" href="website-design-durban.html">Explore website design <span>→</span></a></article>
+        <article><span class="service-icon">◎</span><p class="eyebrow">05 · Automation</p><h2>Chatbots &amp; AI</h2><p>Chat assistants for your website and WhatsApp that answer common questions and capture leads, even after hours.</p><ul class="check-list"><li>Website chatbot</li><li>WhatsApp automation</li><li>Lead capture to your inbox</li><li>Ongoing improvements</li></ul><a class="button button-dark" href="chatbot-ai-integration-durban.html">Explore chatbots &amp; AI <span>→</span></a></article>
       </div></div></section>
       {cta_band("Start with clarity", "Not sure what your business needs?", "Book a free growth audit and we'll identify the best opportunities for your business.")}
       {contact(eyebrow="Let's talk", title="Ready to get<br /><em>more visible?</em>", intro="Contact ZM Results in Durban and let's plan your next growth move.", preselect="Everything / not sure yet")}"""
