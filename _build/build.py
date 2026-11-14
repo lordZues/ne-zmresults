@@ -807,6 +807,169 @@ POSTS = [
 <h2>Not sure where to start?</h2>
 <p>We'll look at your market, your competitors and your budget and give you an honest recommendation. <a href="#contact">Request a free growth audit</a>, or read more about our <a href="seo-durban.html">SEO</a> and <a href="google-ads-durban.html">Google Ads</a> services.</p>""",
     },
+    {
+        "slug": "how-much-does-seo-cost-south-africa.html",
+        "title": "How Much Does SEO Cost in South Africa?",
+        "seo_title": "How Much Does SEO Cost in South Africa? | ZM Results",
+        "desc": "What affects the price of SEO in South Africa, the common pricing models, what you should get for your money, and the red flags to avoid.",
+        "excerpt": "There's no single price for SEO, but there are clear things that drive the cost. Here's how to judge a quote before you sign.",
+        "date": "2026-11-14",
+        "read": "3 min read",
+        "body": """
+<p>Ask five agencies what SEO costs and you'll probably get five very different answers. That's confusing when you're trying to budget, but it isn't because everyone is making it up. The price depends on what your business needs, how competitive your market is and how much work is actually included. This guide explains what drives the cost, so you can compare quotes properly and spot the ones to avoid.</p>
+<h2>Why there's no single price for SEO</h2>
+<p>SEO (search engine optimisation) is the work that helps your business show up in Google's normal results and map listings when people search for what you sell. Unlike an advert, it isn't one product with a fixed price. A plumber in one suburb and an online shop selling nationwide need very different amounts of work to reach page one.</p>
+<h2>What affects the cost</h2>
+<ul>
+<li><strong>Competition:</strong> ranking for "dentist Durban" takes more work than ranking for a niche service in a small town, because more businesses are fighting for the same spots.</li>
+<li><strong>Where you want to rank:</strong> local SEO for one city is usually more affordable than trying to rank across all of South Africa.</li>
+<li><strong>The state of your website:</strong> a slow, outdated or badly built site needs fixing before content and links can do their job.</li>
+<li><strong>Your Google Business Profile:</strong> if it's missing, unverified or incomplete, setting it up properly is part of the work.</li>
+<li><strong>Content needs:</strong> new service pages, area pages and blog posts take time to research and write well.</li>
+<li><strong>How much is done for you:</strong> a report full of recommendations costs less than someone actually carrying them out.</li>
+</ul>
+<h2>The common ways SEO is priced</h2>
+<ul>
+<li><strong>Monthly retainer:</strong> you pay every month for ongoing work. Good for competitive markets where you need continuous effort.</li>
+<li><strong>Once-off package or project:</strong> a fixed price for a defined scope, such as an audit plus a set period of work. Easier to budget for, and you know exactly what you're getting.</li>
+<li><strong>Hourly or consulting:</strong> you pay for advice and do the work yourself or in-house.</li>
+</ul>
+<p>None of these is automatically better. What matters is that the scope is clear and you can see what was done.</p>
+<h2>What you should get for your money</h2>
+<p>Whatever the price, a proper SEO service should include:</p>
+<ul>
+<li>An audit of where you stand now, including your competitors</li>
+<li>A clear plan with the keywords and pages that matter for your business</li>
+<li>Google Business Profile optimisation, if you serve local customers</li>
+<li>Fixes to your website's speed, structure, titles and content</li>
+<li>Regular reporting in plain language, showing what was done and what's changing</li>
+<li>Your business keeping ownership of its website, Google profile and Search Console</li>
+</ul>
+<h2>Red flags to watch out for</h2>
+<ul>
+<li><strong>Guaranteed number one rankings.</strong> Nobody controls Google, so nobody can honestly guarantee a position.</li>
+<li><strong>Packages of hundreds or thousands of backlinks.</strong> Cheap bulk links can do more harm than good.</li>
+<li><strong>No reporting, or reports you can't understand.</strong> You should always know what you're paying for.</li>
+<li><strong>Long lock-in contracts</strong> with no way out if nothing improves.</li>
+<li><strong>The agency owning your accounts.</strong> If you leave, you should keep your website and Google profile.</li>
+</ul>
+<h2>Questions to ask before you sign</h2>
+<ul>
+<li>What exactly will you do in the first month?</li>
+<li>Which searches are you targeting, and why?</li>
+<li>How will you report on progress, and how often?</li>
+<li>Who owns the website, Google profile and analytics accounts?</li>
+<li>What happens if I want to stop?</li>
+</ul>
+<h2>How we price SEO</h2>
+<p>We keep it simple. Our <a href="seo-durban.html">90-Day Google Growth Plan</a> is a <strong>once-off R15 000</strong> package for local businesses. It covers a full SEO audit and strategy, local SEO and Google Business Profile optimisation, website optimisation, a content and keyword strategy, and monthly reporting and support. There's no long-term contract, and you own everything we set up.</p>
+<p>If your business needs something different, we'll tell you honestly after a free audit. You might also find our guide on <a href="seo-vs-google-ads.html">SEO vs Google Ads</a> useful when deciding where to start.</p>
+<p>Want to know what it would take for your business to reach page one? <a href="#contact">Request a free growth audit</a> and we'll show you where you stand.</p>""",
+    },
+    {
+        "slug": "how-much-does-a-website-cost-south-africa.html",
+        "title": "How Much Does a Website Cost in South Africa?",
+        "seo_title": "How Much Does a Website Cost in South Africa? | ZM Results",
+        "desc": "What affects website prices in South Africa, the ongoing costs people forget, and how to get a site that actually brings in enquiries.",
+        "excerpt": "Website quotes can vary hugely. Here's what you're really paying for, the costs people forget, and what every small-business site needs.",
+        "date": "2026-11-14",
+        "read": "3 min read",
+        "body": """
+<p>One designer quotes you a small amount, another quotes many times more, and a website builder advert says you can do it yourself for almost nothing. So what should a website actually cost? The honest answer is that it depends on what the site needs to do for your business. This guide explains what you're paying for, the ongoing costs that catch people out, and how to make sure your money buys a website that brings in customers, not just one that looks nice.</p>
+<h2>Why website prices vary so much</h2>
+<p>A website can be anything from a single page with your phone number to an online shop with hundreds of products and a booking system. Two quotes that look wildly different are often for very different things. Before comparing prices, compare exactly what's included.</p>
+<h2>What affects the price</h2>
+<ul>
+<li><strong>Number of pages:</strong> a home page, services, about and contact page is very different from a site with separate pages for every service and area.</li>
+<li><strong>Custom design or template:</strong> a design built around your brand takes more work than adjusting a ready-made template.</li>
+<li><strong>Features:</strong> online booking, e-commerce, payment, client logins or a <a href="chatbot-ai-integration-durban.html">chatbot</a> all add work.</li>
+<li><strong>Content:</strong> who writes the text and supplies the photos? Professional copywriting and photography add cost but make a big difference.</li>
+<li><strong>SEO setup:</strong> a site built properly for Google, with good page titles, structure, speed and Search Console set up, saves you money later.</li>
+<li><strong>Training and handover:</strong> whether you'll be able to make simple changes yourself.</li>
+</ul>
+<h2>The ongoing costs people forget</h2>
+<p>The build is only part of the cost. Make sure you know who pays for these, and how much, every year:</p>
+<ul>
+<li><strong>Domain name</strong> (like yourbusiness.co.za), which needs renewing</li>
+<li><strong>Hosting</strong>, where your website lives</li>
+<li><strong>Business email</strong>, if it isn't included with your hosting</li>
+<li><strong>Maintenance and updates</strong>, to keep the site secure and working</li>
+<li><strong>Changes and new pages</strong> as your business grows</li>
+</ul>
+<p>Always make sure the domain name is registered in <strong>your business's name</strong>, not the designer's. Losing control of your domain is one of the most painful and expensive problems to fix.</p>
+<h2>DIY website builders vs a professional</h2>
+<p>DIY builders can be a sensible start if you have more time than budget and are comfortable with technology. The trade-off is your time, and the fact that many DIY sites look fine but don't bring in enquiries, because they miss the basics below. A professional site costs more upfront but should be built to generate business from day one.</p>
+<h2>What every small-business website needs</h2>
+<ul>
+<li>Works properly on phones, because most of your visitors will be on one</li>
+<li>Loads quickly</li>
+<li>Explains clearly what you do, where you work and why to choose you</li>
+<li>A separate page for each main service</li>
+<li>Click-to-call and WhatsApp buttons, plus a simple enquiry form</li>
+<li>Reviews or examples of your work</li>
+<li>Google Search Console set up, and a link to your <a href="google-business-profile-guide.html">Google Business Profile</a></li>
+</ul>
+<h2>Questions to ask before you pay</h2>
+<ul>
+<li>Exactly which pages and features are included?</li>
+<li>Who writes the content and supplies the images?</li>
+<li>What are the yearly costs after launch?</li>
+<li>Will the domain and website be owned by my business?</li>
+<li>Is the site set up for Google from the start?</li>
+<li>How do changes work after launch, and what do they cost?</li>
+</ul>
+<h2>How we price websites</h2>
+<p>Every business needs something slightly different, so we give you a clear, <strong>fixed quote</strong> before any work starts, with everything included listed in writing. Our <a href="website-design-durban.html">websites</a> are mobile-first, fast and SEO-ready from launch, and we can also upgrade an existing site if a full rebuild isn't needed.</p>
+<p>Thinking about a new website or wondering whether your current one is costing you customers? <a href="#contact">Get in touch for a free review</a> and we'll tell you what we'd fix first.</p>""",
+    },
+    {
+        "slug": "how-much-to-spend-on-google-ads.html",
+        "title": "How Much Should a Small Business Spend on Google Ads?",
+        "seo_title": "How Much to Spend on Google Ads? | ZM Results",
+        "desc": "How Google Ads pricing works, how to work out a sensible starting budget for your small business, and how to make sure every rand is tracked.",
+        "excerpt": "You control your Google Ads budget, but how much is enough? Here's a simple way to work out a starting budget that makes sense for your business.",
+        "date": "2026-11-14",
+        "read": "3 min read",
+        "body": """
+<p>One of the best things about Google Ads is that you're in control of what you spend. One of the most confusing things is working out how much that should be. Spend too little and you won't get enough data or enquiries to judge it. Spend too much too soon and you can waste money before the campaign is set up properly. Here's how Google Ads pricing works and a simple way to work out a sensible starting budget.</p>
+<h2>How you're charged</h2>
+<ul>
+<li><strong>You pay per click.</strong> In most search campaigns you're only charged when someone clicks your ad, not when it's shown.</li>
+<li><strong>You set a daily budget.</strong> Google spreads your spending across the month, so you won't be surprised by a huge bill.</li>
+<li><strong>Prices are set by an auction.</strong> The cost of a click depends on how many other businesses want to appear for the same search, and on how relevant and useful Google thinks your ad and website are.</li>
+<li><strong>Ad spend and management are separate.</strong> Your ad spend goes directly to Google. If you use an agency, its management fee is a separate cost, so make sure any quote shows both clearly.</li>
+</ul>
+<h2>What affects the cost of a click</h2>
+<ul>
+<li><strong>Your industry:</strong> services where one customer is worth a lot, like legal or financial services, usually have more expensive clicks.</li>
+<li><strong>Your area:</strong> competition varies between cities and suburbs.</li>
+<li><strong>Your keywords:</strong> specific searches like "emergency plumber Pinetown" often cost less and convert better than broad ones like "plumber".</li>
+<li><strong>Your ad and landing page:</strong> Google rewards relevant ads and pages that give people what they searched for, which can lower what you pay.</li>
+</ul>
+<h2>Work out your budget backwards</h2>
+<p>Instead of picking a number out of the air, start with the result you want and work backwards. You need three figures:</p>
+<ul>
+<li><strong>How many enquiries you want each month.</strong></li>
+<li><strong>Roughly how many visitors turn into an enquiry</strong> on your website. If you don't know yet, your first month of ads will tell you.</li>
+<li><strong>The estimated cost per click</strong> for your keywords. Google's free Keyword Planner tool shows estimates for your area.</li>
+</ul>
+<p><strong>A simple example</strong> (made-up numbers, just to show the method): say clicks for your service are estimated at R20 each and about 1 in 10 visitors sends an enquiry. Each enquiry would then cost around R200. If you want 15 enquiries a month, you'd need a budget of about R3 000. Your real numbers will be different, but the method stays the same.</p>
+<p>Then ask the most important question: <strong>what is a new customer worth to you?</strong> If one job is worth far more than the cost of the enquiries it takes to win it, Google Ads can be very profitable.</p>
+<h2>Start small and focused</h2>
+<ul>
+<li>Start with <strong>one main service</strong> and <strong>one area</strong> rather than everything at once.</li>
+<li>Use specific keywords that show someone is ready to buy.</li>
+<li>Add <strong>negative keywords</strong> like "jobs", "free", "course" and "DIY" so you don't pay for the wrong clicks.</li>
+<li>Show ads during the hours you can actually answer the phone.</li>
+<li>Send people to a page about that exact service, not just your home page.</li>
+</ul>
+<h2>Track every enquiry</h2>
+<p>Set up conversion tracking for calls, WhatsApp messages and form submissions before you spend seriously. Without it, you're guessing. With it, you can see exactly which keywords bring in customers, cut the ones that don't, and confidently put more money into the ones that do.</p>
+<h2>When to increase your budget</h2>
+<p>Once you know what an enquiry costs and that the enquiries are turning into paying customers, increasing your budget becomes a simple business decision. Scale up gradually and keep an eye on whether the cost per enquiry stays sensible.</p>
+<h2>Need help?</h2>
+<p>We set up and manage <a href="google-ads-durban.html">Google Ads for local businesses</a>, with tracking built in from day one so you know what every rand is doing. If you're still deciding between ads and SEO, read <a href="seo-vs-google-ads.html">SEO vs Google Ads: which should you start with?</a>, or <a href="#contact">request a free growth audit</a> and we'll recommend a starting budget for your business.</p>""",
+    },
 ]
 
 
