@@ -229,6 +229,18 @@ CLIENT_TILES = "".join(
     + (f"<span>{html.escape(n)}</span>" if n else "") + "</li>"
     for f, n in CLIENTS)
 
+# ---------------- TESTIMONIALS ----------------
+# Real Google reviews of ZM Results, supplied by the owner. Names shortened to first name + initial.
+TESTIMONIALS = [
+    ("It was a pleasure working with you guys, appreciate the transparency. The marketing was perfectly executed. Looking forward to working together in the future.", "Masande N.", 4),
+    ("It was a pleasure working with you, you were very professional and did the marketing perfectly. Your service is exceptional.", "Nondumiso M.", 5),
+    ("It was a pleasure working with you. Everything was very professional, and the marketing was done perfectly.", "Slindile G.", 5),
+    ("Very great service, quick TAT and excellent quality. Highly recommended ZM Results.", "Lindokuhle L.", 5),
+]
+TESTIMONIAL_CARDS = "".join(
+    f'''<figure class="review-card"><div class="review-stars" role="img" aria-label="{s} out of 5 stars">{"★" * s}<span>{"★" * (5 - s)}</span></div><blockquote>“{html.escape(q)}”</blockquote><figcaption><b>{html.escape(n)}</b><span>Google review</span></figcaption></figure>'''
+    for q, n, s in TESTIMONIALS)
+
 # ---------------- HOME ----------------
 home_faq = [
     ("What's included in the 90-Day Google Growth Plan?",
@@ -272,7 +284,12 @@ home = f"""
       <section class="clients section" id="clients"><div class="container">
         <div class="section-head centered"><p class="eyebrow">Our clients</p><h2>Businesses we've<br /><em>worked with.</em></h2><p class="section-intro">From attorneys and logistics companies to contractors and repair shops, we help businesses across industries get seen.</p></div>
         <ul class="client-grid">{CLIENT_TILES}</ul>
-        <p class="note" style="text-align:center;margin-top:34px">Worked with us? We'd really appreciate it if you <a href="{REVIEW_URL}" target="_blank" rel="noopener">left us a Google review ★</a></p>
+      </div></section>
+
+      <section class="reviews section" id="reviews"><div class="container">
+        <div class="section-head centered"><p class="eyebrow">Client reviews</p><h2>What our clients<br /><em>say about us.</em></h2></div>
+        <div class="review-grid">{TESTIMONIAL_CARDS}</div>
+        <div class="reviews-actions"><a class="button button-dark" href="{MAPS_URL}" target="_blank" rel="noopener">Read all our Google reviews <span>→</span></a><a class="text-link" href="{REVIEW_URL}" target="_blank" rel="noopener">Worked with us? Leave a review <span>→</span></a></div>
       </div></section>
 
       <section class="services section" id="services"><div class="container"><div class="section-head"><div><p class="eyebrow">What we do</p><h2>More visibility.<br /><em>More business.</em></h2></div><p class="section-intro">Your customers are searching online. We make sure they find you, trust you and choose you.</p></div><div class="service-grid">
