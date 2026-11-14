@@ -15,6 +15,7 @@ EMAIL = "zmresults@gmail.com"          # shown publicly on the site
 FORM_EMAIL = "zuesjordan@gmail.com"   # where every form submission is emailed
 REVIEW_URL = "https://g.page/r/CQwwFzKsM4ULEAE/review"  # Google Business Profile review link
 MAPS_URL = "https://share.google/gZWnF4aFIT76BYTSZ"  # Google Business Profile / Maps listing
+LINKEDIN_URL = "https://www.linkedin.com/in/zusakhe-mazibu-55b72037a"  # owner's personal LinkedIn
 
 BUSINESS = {
     "@type": "ProfessionalService",
@@ -97,6 +98,7 @@ def footer():
               <li><a href="{WA}" target="_blank" rel="noopener">WhatsApp us</a></li>
               <li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
               <li><a href="{REVIEW_URL}" target="_blank" rel="noopener">★ Leave us a Google review</a></li>
+              <li><a href="{LINKEDIN_URL}" target="_blank" rel="noopener">in&nbsp; Connect on LinkedIn</a></li>
               <li><a href="{MAPS_URL}" target="_blank" rel="noopener">📍 Durban, KwaZulu-Natal (Google Maps)</a></li>
             </ul>
           </div>
