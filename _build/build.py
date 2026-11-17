@@ -161,6 +161,12 @@ def page(filename, title, description, body, active="", schema=None, noindex=Fal
 <html lang="en-ZA">
   <head>
     <meta charset="UTF-8" />
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-59NXW2K8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{html.escape(title)}</title>
     <meta name="description" content="{html.escape(description)}" />{robots}
